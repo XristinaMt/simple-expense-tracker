@@ -1,0 +1,1 @@
+Web app for expense tracking using React.js. The application allows users to enter their income and expenses, view data from history and track their monthly money balance through an interactive graph. Data is stored in localStorage for information retention. 
