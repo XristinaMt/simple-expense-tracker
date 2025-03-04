@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #414141;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    color: rgba(75, 192, 192, 1);
+    text-align: center;
+}
+
+.app-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.history-container {
+    padding: 5px;
+  }
+  
+  .history-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .history-list li {
+    background: #2c2c2c;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.input-grid > * {
+    background-color: #2c2c2c;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.summary {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.info {
+    background-color: #414141;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 2px;
+}
+
+button {
+    background-color: #8a70e1;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+button:hover {
+    background-color: #562ae8;
+}
+
+.submit-button {
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Στυλ για το κουμπί Ιστορικό Μηνών */
+.history-button {
+    background-color: #8a70e1;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 1px;
+}
+
+.history-button:hover {
+    background-color: #562ae8;
+}
+
+
+/* ------- κινητο -------- */
+@media (max-width: 768px) {
+  .app-container {
+      width: 95%;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  h1, h2, h3 {
+      font-size: 16px;
+      text-align: center;
+  }
+
+  .input-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+  }
+
+  .input-grid > * {
+      padding: 10px;
+      font-size: 14px;
+      width: 100%; 
+      text-align: center;
+  }
+
+  .summary, .history-list {
+      text-align: center;
+      font-size: 13px;
+      width: 100%;
+      max-width: 400px;
+  }
+
+  .history-list li {
+      font-size: 13px;
+      padding: 6px;
+  }
+
+  button {
+      width: 100%;
+      max-width: 250px;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 8px;
+  }
+
+  .history-button {
+    font-size: 14px; 
+    padding: 6px 10px; 
+    width: auto;
+    min-width: 100px; 
+  }
+}
